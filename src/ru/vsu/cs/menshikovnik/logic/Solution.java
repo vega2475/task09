@@ -10,16 +10,15 @@ public class Solution {
         ArrayList<Integer> copyList = new ArrayList<>(list);
         Collections.sort(copyList);
         int d = copyList.get(1) - copyList.get(0);
-        for (int i = 0;i < copyList.size();i++){
+        for (int i = 0; i < copyList.size(); i++) {
             if (i == copyList.size() - 1) break;
-            if (copyList.get(i + 1) - copyList.get(i) == d){
+            if (copyList.get(i + 1) - copyList.get(i) == d) {
                 found = true;
-            }
-            else return list;
+            } else return list;
         }
-        if (found){
+        if (found) {
             return copyList;
         }
         return null;
     }
-    }
+}
