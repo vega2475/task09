@@ -1,10 +1,10 @@
-package ru.vsu.cs.menshikovnik.gui;
+package ru.vsu.cs.vegaMSK.gui;
 
-import ru.vsu.cs.menshikovnik.logic.*;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
-import ru.vsu.cs.menshikovnik.util.*;
+import ru.vsu.cs.vegaMSK.logic.Solution;
+import ru.vsu.cs.vegaMSK.util.*;
 import java.util.List;
 
 import javax.swing.*;
@@ -70,7 +70,7 @@ public class FrameMain extends JFrame {
         menuBarMain.add(menuLookAndFeel);
         SwingUtils.initLookAndFeelMenu(menuLookAndFeel);
 
-        JTableUtils.writeArrayToJTable(tableInput, new int[]{1, 7, 3, 9, 5, 11});
+        JTableUtils.writeArrayToJTable(tableInput, new int[]{5, 5, 5, -100, 3, 7, 7, 1, -100, 8, 7, -100, 1});
 
         this.pack();
 
@@ -125,7 +125,7 @@ public class FrameMain extends JFrame {
                     List<Integer> listArr= Arrays.asList(arr1);
                     ArrayList<Integer> listArr1 = new ArrayList<>(listArr);
 
-                    List<Integer> result= Solution.arithmeticProgression(listArr1);
+                    List<Integer> result= Solution.sol(listArr1);
                     Integer[] arr2 = new Integer[result.size()];
                     for (int i = 0; i < result.size(); i++) {
                         arr2[i] = result.get(i);

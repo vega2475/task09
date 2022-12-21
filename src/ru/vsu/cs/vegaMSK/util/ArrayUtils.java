@@ -1,4 +1,4 @@
-package ru.vsu.cs.menshikovnik.util;
+package ru.vsu.cs.vegaMSK.util;
 
 import java.io.File;
 import java.io.FileNotFoundException;

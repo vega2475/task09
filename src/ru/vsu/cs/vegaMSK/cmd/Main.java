@@ -1,7 +1,7 @@
-package ru.vsu.cs.menshikovnik.cmd;
+package ru.vsu.cs.vegaMSK.cmd;
 
-import ru.vsu.cs.menshikovnik.logic.*;
-import ru.vsu.cs.menshikovnik.util.ArrayUtils;
+import ru.vsu.cs.vegaMSK.logic.Solution;
+import ru.vsu.cs.vegaMSK.util.ArrayUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class Main {
         Integer[] sourceMatrix1 = ArrayUtils.toObject(sourceMatrix);
         List<Integer> listArr = Arrays.asList(sourceMatrix1);
         ArrayList<Integer> listArr1 = new ArrayList<>(listArr);
-        ArrayList<Integer> result = Solution.arithmeticProgression(listArr1);
+        ArrayList<Integer> result = Solution.sol(listArr1);
         Integer[] arr2 = new Integer[result.size()];
         for (int i = 0; i < result.size(); i++) {
             arr2[i] = result.get(i);

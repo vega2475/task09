@@ -1,6 +1,6 @@
-package ru.vsu.cs.menshikovnik.gui;
+package ru.vsu.cs.vegaMSK.gui;
 
-import ru.vsu.cs.menshikovnik.util.SwingUtils;
+import ru.vsu.cs.vegaMSK.util.SwingUtils;
 
 import java.util.Locale;
 
@@ -14,7 +14,7 @@ public class Main {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ru.vsu.cs.menshikovnik.gui.FrameMain().setVisible(true);
+                new ru.vsu.cs.vegaMSK.gui.FrameMain().setVisible(true);
             }
         });
     }

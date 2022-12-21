@@ -1,4 +1,4 @@
-package ru.vsu.cs.menshikovnik.cmd;
+package ru.vsu.cs.vegaMSK.cmd;
 
 public class InputArgs {
     public String inputFile;

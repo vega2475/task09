@@ -1,4 +1,4 @@
-package ru.vsu.cs.menshikovnik.util;
+package ru.vsu.cs.vegaMSK.util;
 
 import java.awt.*;
 import java.awt.font.FontRenderContext;
